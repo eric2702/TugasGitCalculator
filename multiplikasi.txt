@@ -1,0 +1,9 @@
+fun main() {
+    print("masukan angka utama")
+    val number1 = readLine()?.toInt()
+    println("$number1 ingin di kali dengan angka apa?")
+    val number2 = readLine()?.toInt()
+
+    var result : Int? = (number2?.let { number1?.times(it) })
+    println("$number1 X $number2 = $result"  )
+}
