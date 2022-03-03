@@ -1,0 +1,9 @@
+fun main() {
+    print("masukan angka utama")
+    val number1 = readLine()?.toInt()
+    println("$number1 ingin di bagi dengan angka apa?")
+    val number2 = readLine()?.toInt()
+
+    var result : Int? = (number2?.let { number1?.div(it) })
+    println("$number1 : $number2 = $result"  )
+}
