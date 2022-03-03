@@ -1,9 +1,9 @@
-sealed class Operator(val x: Long ) {
-    abstract fun calculate(y: Long ) : Long
+fun main() {
+    print("masukan angka utama")
+    val number1 = readLine()?.toInt()
+    println("$number1 ingin di kurangi dengan angka apa?")
+    val number2 = readLine()?.toInt()
 
-    class sub (x: Long) : Operator(x) {
-        override fun calculate(y: Long): Long{
-            return x - y
-        }
-    }
+    var result : Int? = (number2?.let { number1?.minus(it) })
+    println("$number1 - $number2 = $result"  )
 }
